@@ -1,0 +1,156 @@
+:root, html, body, * {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+}
+
+#app {
+  height: 100svh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr 100px;
+}
+
+body {
+  background-color: #000000;
+}
+
+#music-tab {
+  box-sizing: content-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 1px;
+}
+
+audio, source {
+  display: none;
+}
+
+.music-component {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+  width: 200px;
+
+}
+
+img {
+  height: 100%;
+  object-fit: fill;
+}
+
+
+/* main content */
+
+main {
+  width: 100%;
+  height: 100%;
+  background: #2b0000;
+  place-content: center;
+}
+
+#container {
+  margin: auto;
+  width: 210px;
+  height: 210px;
+  background-color: #fff;
+}
+
+
+
+
+/* play bar */
+
+
+footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-rows: 1fr 20px;  
+}
+
+#sound {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#sound-level-control {
+  position: relative;
+  z-index: 10;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#level {
+  height: inherit;
+}
+
+#mute {
+  width: 2rem;
+  height: 2rem;
+}
+
+#play-control {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play{
+  width: 2rem;
+  height: 2rem;
+}
+
+
+#music-progress {
+  width: 100%;
+  place-content: center;
+}
+
+#music-progress-input {
+  width: 100%;
+}
+
+button {
+  border: 1px solid #ff2c2c;
+  border-radius: .5rem;
+  outline: none;
+}
+
+button:hover {
+  background-color: #9b3d3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
