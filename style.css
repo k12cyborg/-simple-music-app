@@ -137,9 +137,42 @@ button:hover {
   background-color: #9b3d3d;
 }
 
+main {
+  position: relative;
+}
 
+form {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#image-upload, #song-upload {
+  display: none;
+}
 
+#songid-upload {
+  color: #000;
+  width: 100%;
+}
+
+.image-label, .song-label{
+  width: 50%;
+  background-color: white;
+  color: black;
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+form > button {
+  background: #000;
+  border: none;
+  width: 100%;
+}
 
 
 
