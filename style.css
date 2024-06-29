@@ -1,189 +1,21 @@
-:root, html, body, * {
-  margin: 0; 
+:root, html, body, *{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
   font-size: 16px;
-  color: white;
-}
-
-#app {
-  height: 100svh;
-  width: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr 100px;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
 }
-
-#music-tab {
-  box-sizing: content-box;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  gap: 1px;
-}
-
-audio, source {
-  display: none;
-}
-
-.music-component {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 200px;
-  width: 200px;
-
-}
-
-img {
-  height: 100%;
-  object-fit: fill;
-}
-
-
-/* main content */
-
-main {
+#app {
   width: 100%;
   height: 100%;
-  background: #2b0000;
-  place-content: center;
+  background-color: #252525;
 }
-
-#container {
-  margin: auto;
-  width: 210px;
-  height: 210px;
-  background-color: #fff;
-}
-
-
-
-
-/* play bar */
-
-
-footer {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-rows: 1fr 20px;  
-}
-
-#sound {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-#sound-level-control {
-  position: relative;
-  z-index: 10;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#level {
-  height: inherit;
-}
-
-#mute {
-  width: 2rem;
-  height: 2rem;
-}
-
-#play-control {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#play{
-  width: 2rem;
-  height: 2rem;
-}
-
-
-#music-progress {
-  width: 100%;
-  place-content: center;
-}
-
-#music-progress-input {
-  width: 100%;
-}
-
-button {
-  border: 1px solid #ff2c2c;
-  border-radius: .5rem;
-  outline: none;
-}
-
-button:hover {
-  background-color: #9b3d3d;
-}
-
-main {
-  position: relative;
-}
-
-form {
-  width: 300px;
-  position: absolute;
-  top: 0;
-  left: calc(100% - 300px);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#image-upload, #song-upload {
-  display: none;
-}
-
-#songid-upload {
-  color: #000;
-  width: 100%;
-}
-
-.image-label, .song-label{
-  width: 50%;
-  background-color: white;
-  color: black;
-  padding: .5rem;
-  border-radius: .5rem;
-  text-align: center;
-}
-
-form > button {
-  background: #000;
-  border: none;
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 

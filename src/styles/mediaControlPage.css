@@ -1,0 +1,91 @@
+#app {
+  background-color: #353535;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  color: white;
+}
+
+nav {
+  background-color: #16b;
+  padding-left: 1.2rem;
+}
+
+.post-title {
+  margin: auto;
+  font-size: 2rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 250px 1fr;
+  grid-template-rows: auto .5fr 250px;
+  grid-template-areas:
+    "genre singer musiccard"
+    "song song musiccard"
+    "song song data";
+  padding: 1rem 4rem;
+  gap: 1rem;
+}
+
+/* post genre component */
+
+form {
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background-color: #252525;
+  border-radius: 1rem;
+}
+
+form > input {
+  width: 100%;
+  color: black;
+}
+
+form > button {
+  width: 100%;
+}
+
+.genreForm {
+  grid-area: genre;
+}
+
+.singerForm {
+  grid-area: singer;
+}
+
+.songForm {
+  grid-area: song;
+}
+
+.musicCardForm {
+  grid-area: musiccard;
+}
+
+#data {
+  background-color: #252525;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: auto;
+  padding: 2rem 1.5rem;
+}
+
+.data-nav{
+  width: auto;
+}
+.data-nav > ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+

@@ -3,42 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
-      <div id="music-tab"></div>
-      <!-- main content -->
 
-      <main>
-        <div id="container"></div>
 
-        <form>
-          <input type="number" name="SongID" id="songid-upload" required>
-          <input type="file" name="image" id="image-upload" accept=".jpg,.jpeg,.png" required />
-          <input type="file" name="song" id="song-upload" accept=".mp3" required/>
-          <label class="image-label" for="image-upload">Image</label>
-          <label class="song-label" for="song-upload">Song</label>
-          <button type="submit">submit</button>
-        </form>
-      </main>
 
-      <footer id="play-bar">
-        <div id="sound">
-          <div id="sound-level-control">
-            <button id="mute"></button>
-            <input id="level" type="range" />
-          </div>
-          <div id="play-control">
-            <button id="play"></button>
-          </div>
-        </div>
 
-        <div id="music-progress">
-          <input id="music-progress-input" min="0" max="1000" type="range" />
-        </div>
-      </footer>
+
+
+
     </div>
     <script type="module" src="/main.js"></script>
   </body>
