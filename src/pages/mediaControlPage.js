@@ -4,7 +4,7 @@ import { postGenre } from "../utils/postData";
 async function mediaControlPage() {
   document.getElementById("app").innerHTML = `
     <nav>
-      <h3 class="post-title">Post data</h3>
+      <h3 class="post-title">Data</h3>
     </nav>    
     <main>
     </main>
@@ -142,7 +142,12 @@ async function data() {
     const content = document.querySelector(".data-content");
     content.innerHTML = ""
     data.registers.forEach((e) => {
-      content.innerHTML += `<div>${e.GenreName}</div>`;
+      let maria = document.createElement("li");
+      Object.entries(e).forEach(a=>{
+        maria.innerText += (a.join(": "))
+        maria.innerText += "; "
+      })
+      content.appendChild(maria)
     });
   }
 
@@ -169,6 +174,11 @@ async function data() {
         }
         break
       case "musiccards":
+        if (data.datatype != "songs") {
+          update(await getMusic());
+          data.datatype = "songs";
+        }
+        break
     }
   });
 
